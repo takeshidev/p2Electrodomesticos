@@ -1,6 +1,6 @@
 package p2Electrodomesticos;
 
-public class Televisor extends Electrodomestico {
+public class Televisor extends Electrodomesticos {
 //ATRIBUTOS_____________________________________
 	private float resolucion; // pulgadas
 	private boolean sintonizadorTDT;

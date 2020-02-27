@@ -6,7 +6,7 @@ public class P2Ejecutable {
 		
 		Lista lista = new Lista();
 //CREACION ITEMS
-		Electrodomestico e1 = new Electrodomestico();
+		Electrodomesticos e1 = new ElectrodomesticoOtro();
 		e1.setPrecioBase(e1.precioFinal(e1.getConsumoEnergetico(), e1.getPeso()));
 		lista.items[0]=e1;
 		
@@ -28,9 +28,10 @@ public class P2Ejecutable {
 		
 
 //MUESTRA TOTALES________________________________________
-		lista.calculaElectrodomesticos();
-//		lista.calculaTelevisores();
-//		lista.calculaLavadoras();
+		lista.calculaElectrodomesticosOtros();
+		lista.calculaTelevisores();
+		lista.calculaLavadoras();
+		lista.calculaTodo();
 		
 
 		

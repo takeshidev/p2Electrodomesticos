@@ -1,6 +1,6 @@
 package p2Electrodomesticos;
 
-public class Electrodomestico {
+public class Electrodomesticos {
 //ATRIBUTOS_____________________________________
 	private double precioBase;
 	private String color;
@@ -13,7 +13,7 @@ public class Electrodomestico {
 	private final double PESO_DEFAULT = 5;
 
 // CONSTRUCTORES________________________________
-	public Electrodomestico() { // Constructor default
+	public Electrodomesticos() { // Constructor default
 		this.precioBase = PRECIO_DEFAULT;
 		this.color = COLOR_DEFECTO;
 		this.consumoEnergetico=CONSUMO_DEFAULT;
@@ -23,7 +23,7 @@ public class Electrodomestico {
 		comprobarColor(color);
 	}
 
-	public Electrodomestico(double precio, double peso) { // Constructor precio, peso
+	public Electrodomesticos(double precio, double peso) { // Constructor precio, peso
 		this.precioBase = precio;
 		this.color = COLOR_DEFECTO;
 		this.consumoEnergetico=CONSUMO_DEFAULT;
@@ -33,7 +33,7 @@ public class Electrodomestico {
 		comprobarColor(color);
 	}
 
-	public Electrodomestico(double precio, double peso, String color, char consumo) { // Constructor todos
+	public Electrodomesticos(double precio, double peso, String color, char consumo) { // Constructor todos
 		this.precioBase = precio;
 		this.color = color;
 		this.peso = peso;

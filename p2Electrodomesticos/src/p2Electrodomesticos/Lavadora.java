@@ -1,6 +1,6 @@
 package p2Electrodomesticos;
 
-public class Lavadora extends Electrodomestico{
+public class Lavadora extends Electrodomesticos{
 //ATRIBUTOS_____________________________________
 	private float carga;
 	
