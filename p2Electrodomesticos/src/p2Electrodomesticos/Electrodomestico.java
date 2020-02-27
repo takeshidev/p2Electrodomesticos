@@ -60,6 +60,62 @@ public class Electrodomestico {
 		return precioFinal;
 	}
 
-//GET & SET_____________________________________
+	
+//GETs & SETs___________________________________
+	/**
+	 * @return the precioBase
+	 */
+	public double getPrecioBase() {
+		return precioBase;
+	}
+
+	/**
+	 * @param precioBase the precioBase to set
+	 */
+	public void setPrecioBase(double precioBase) {
+		this.precioBase = precioBase;
+	}
+
+	/**
+	 * @return the color
+	 */
+	public String getColor() {
+		return color;
+	}
+
+	/**
+	 * @param color the color to set
+	 */
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	/**
+	 * @return the consumoEnergetico
+	 */
+	public char getConsumoEnergetico() {
+		return consumoEnergetico;
+	}
+
+	/**
+	 * @param consumoEnergetico the consumoEnergetico to set
+	 */
+	public void setConsumoEnergetico(char consumoEnergetico) {
+		this.consumoEnergetico = consumoEnergetico;
+	}
+
+	/**
+	 * @return the peso
+	 */
+	public double getPeso() {
+		return peso;
+	}
+
+	/**
+	 * @param peso the peso to set
+	 */
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
 
 }
