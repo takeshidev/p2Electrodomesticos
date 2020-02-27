@@ -44,11 +44,11 @@ public class Electrodomestico {
 	}
 
 //METODOS_______________________________________
-	public void comprobarConsumoEnergetico(char letra) {
+	private void comprobarConsumoEnergetico(char letra) {
 		// comprueba letra correcta
 	}
 
-	public void comprobarColor(String color) {
+	private void comprobarColor(String color) {
 		// color correcto o defecto
 	}
 
