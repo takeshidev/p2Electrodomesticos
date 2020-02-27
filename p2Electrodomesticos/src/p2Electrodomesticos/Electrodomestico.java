@@ -54,9 +54,9 @@ public class Electrodomestico {
 
 	public double precioFinal(char consumo, double peso) {
 		
-		
-		
-		double precioFinal = 0;// segun consumo y tamano
+		double adicionalConsumo = Utiles.precioConsumo(consumo);
+		double adicionalPeso = Utiles.precioPeso(peso);
+		double precioFinal = precioBase+adicionalConsumo+adicionalPeso;
 		return precioFinal;
 	}
 

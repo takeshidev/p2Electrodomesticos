@@ -6,7 +6,7 @@ public class Utiles {
 	 * precio
 	 * 
 	 * @param letra
-	 * @return
+	 * @return nuevoPrecio
 	 */
 	public static double precioConsumo(char letra) {
 		double nuevoPrecio = 0;
@@ -62,5 +62,37 @@ public class Utiles {
 			inputCorrecto = true;
 		}
 		return nuevoPrecio;
+	}
+
+/**
+ * Recibe la carga de una Lavadora y retorna el valor a adicionar al precio
+ */
+	public static double precioCarga(float carga){
+		double nuevoPrecio = 0;
+		if (carga>30) {
+			nuevoPrecio += 50;
+		}
+		
+		return nuevoPrecio;
+	}
+/**
+ * Recibe si Televisor tiene Sintonizador y retorna el valor a adicionar al precio
+ */
+	public static double precioSintonizador(boolean sintonizador) {
+		double nuevoPrecio = 0;
+		if (sintonizador) {
+			nuevoPrecio = 50;
+		}
+		return nuevoPrecio;
+	}
+	
+/**
+ * Recibe el tamano del Televisor y retorna el porcentaje de incremento del precio	
+ */
+	public static double incrementoPulgadas(float pulgadas) {
+		if (pulgadas>40) {
+			return 1.3;
+		}
+		return 1.0;
 	}
 }

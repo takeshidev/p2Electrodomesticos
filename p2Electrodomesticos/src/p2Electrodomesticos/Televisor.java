@@ -27,8 +27,14 @@ public class Televisor extends Electrodomestico {
 	}
 //METODOS_______________________________________
 
-	public void precioFinal() {
+	public double precioFinal(char consumo, double peso) {
 		
+		double adicionalConsumo = Utiles.precioConsumo(consumo);
+		double adicionalPeso = Utiles.precioPeso(peso);
+		double adicionalSintonizador = Utiles.precioSintonizador(isSintonizadorTDT());
+		double incrementoPulgadas = Utiles.incrementoPulgadas(getResolucion());
+		double precioFinal = (getPrecioBase()+adicionalConsumo+adicionalPeso+adicionalSintonizador)*incrementoPulgadas;
+		return precioFinal;
 	}
 
 //GET & SET_____________________________________

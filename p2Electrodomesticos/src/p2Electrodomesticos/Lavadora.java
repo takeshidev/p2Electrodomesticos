@@ -19,8 +19,13 @@ public class Lavadora extends Electrodomestico{
 		this.carga=carga;
 	}
 //METODOS_______________________________________
-	public void precioFinal() {
-		
+	public double precioFinal(char consumo, double peso) {
+	
+		double adicionalConsumo = Utiles.precioConsumo(consumo);
+		double adicionalPeso = Utiles.precioPeso(peso);
+		double adicionalCarga = Utiles.precioCarga(getCarga());
+		double precioFinal = getPrecioBase()+adicionalConsumo+adicionalPeso+adicionalCarga;
+		return precioFinal;
 	}
 //GET & SET_____________________________________
 		//solo get carga
