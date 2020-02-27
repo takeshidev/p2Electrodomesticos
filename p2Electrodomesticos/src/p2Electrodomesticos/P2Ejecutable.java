@@ -4,7 +4,8 @@ public class P2Ejecutable {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-System.out.println("Hola");
+		Electrodomestico[] items = new Electrodomestico[10];
+		
 	}
 
 }
