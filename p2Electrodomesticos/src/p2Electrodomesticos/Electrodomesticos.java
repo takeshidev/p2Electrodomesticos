@@ -17,7 +17,7 @@ public class Electrodomesticos {
 // CONSTRUCTORES________________________________
 	public Electrodomesticos() { // Constructor default
 		this.precioBase = PRECIO_DEFAULT;
-		this.color = COLOR_DEFECTO;
+		this.color = COLOR_DEFECTO.toLowerCase();
 		this.consumoEnergetico=CONSUMO_DEFAULT;
 		this.peso = PESO_DEFAULT;
 		
@@ -27,7 +27,7 @@ public class Electrodomesticos {
 
 	public Electrodomesticos(double precio, double peso) { // Constructor precio, peso
 		this.precioBase = precio;
-		this.color = COLOR_DEFECTO;
+		this.color = COLOR_DEFECTO.toLowerCase();
 		this.consumoEnergetico=CONSUMO_DEFAULT;
 		this.peso = peso;
 		
@@ -37,7 +37,7 @@ public class Electrodomesticos {
 
 	public Electrodomesticos(double precio, double peso, String color, char consumo) { // Constructor todos
 		this.precioBase = precio;
-		this.color = color;
+		this.color = color.toLowerCase();
 		this.peso = peso;
 		this.consumoEnergetico = consumo;
 		
@@ -51,9 +51,9 @@ public class Electrodomesticos {
 	 */	
 	private void comprobarConsumoEnergetico(char letra) {
 		if (letra=='A'||letra=='B'||letra=='C'||letra=='D'||letra=='E'||letra=='F') {
-			System.out.print("Codigo consumo ok. \t ");
+			//System.out.print("Codigo consumo ok. \t ");
 		}else {
-			System.out.print("Codigo consumo erroneo, se usara valor por defecto. \t");
+			//System.out.print("Codigo consumo erroneo, se usara valor por defecto. \t");
 			setConsumoEnergetico(CONSUMO_DEFAULT);
 		}
 	}
@@ -62,10 +62,10 @@ public class Electrodomesticos {
 	 */	
 	private void comprobarColor(String color) {
 		if (color.equalsIgnoreCase("blanco")||color.equalsIgnoreCase("negro")||color.equalsIgnoreCase("rojo")||color.equalsIgnoreCase("azul")||color.equalsIgnoreCase("gris")) {
-			System.out.print("Color ok. \n");
+			//System.out.print("Color ok. \n");
 		}else {
 			setColor(COLOR_DEFECTO);
-			System.out.print("Color no existente. Se usara color default.\n");
+			//System.out.print("Color no existente. Se usara color default.\n");
 		}
 	}
 	/**
@@ -106,7 +106,8 @@ public class Electrodomesticos {
 	 * @param color the color to set
 	 */
 	public void setColor(String color) {
-		this.color = color;
+		this.color = color.toLowerCase();
+		comprobarColor(this.color);
 	}
 
 	/**
@@ -121,6 +122,7 @@ public class Electrodomesticos {
 	 */
 	public void setConsumoEnergetico(char consumoEnergetico) {
 		this.consumoEnergetico = consumoEnergetico;
+		comprobarConsumoEnergetico(this.consumoEnergetico);
 	}
 
 	/**

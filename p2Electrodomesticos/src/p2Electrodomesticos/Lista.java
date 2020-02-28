@@ -20,7 +20,7 @@ public class Lista {
 		for (int i = 0; i < items.length; i++) {
 			if (items[i] instanceof Electrodomesticos) {
 				totalTodo += items[i].getPrecioBase();
-				System.out.println(i + " " + items[i].getPrecioBase());
+				System.out.println("["+i+"]" + " $" + items[i].getPrecioBase() +"  "+items[i].toString());
 			}
 		}
 		System.out.println("Total final: $" + totalTodo);
@@ -30,11 +30,11 @@ public class Lista {
 	 */
 	public void calculaElectrodomesticosOtros() {
 		double totalElectrodomesticos = 0;
-		System.out.println("Otros electrodomesticos:");
+		System.out.println("\nOtros electrodomesticos:");
 		for (int i = 0; i < items.length; i++) {
 			if (items[i] instanceof ElectrodomesticoOtro) {
 				totalElectrodomesticos += items[i].getPrecioBase();
-				System.out.println(i + " " + items[i].getPrecioBase());
+				System.out.println("["+i+"]" + " $" + items[i].getPrecioBase() +"  "+items[i].toString());
 			}
 		}
 		System.out.println("Total otros electrodomesticos: $" + totalElectrodomesticos+"\n");
@@ -48,7 +48,7 @@ public class Lista {
 		for (int i = 0; i < items.length; i++) {
 			if (items[i] instanceof Lavadora) {
 				totalLavadoras += items[i].getPrecioBase();
-				System.out.println(i + " " + items[i].getPrecioBase() +"  "+items[i].toString() );
+				System.out.println("["+i+"]" + " $" + items[i].getPrecioBase() +"  "+items[i].toString() );
 			}
 		}
 		System.out.println("Total lavadoras: $" + totalLavadoras+"\n");
@@ -63,7 +63,7 @@ public class Lista {
 		for (int i = 0; i < items.length; i++) {
 			if (items[i] instanceof Televisor) {
 				totalTelevisores += items[i].getPrecioBase();
-				System.out.println(i + " " + items[i].getPrecioBase() +"  "+items[i].toString() );
+				System.out.println("["+i+"]" + " $" + items[i].getPrecioBase() +"  "+items[i].toString() );
 			}
 		}
 		System.out.println("Total televisores: $" + totalTelevisores +"\n");

@@ -1,6 +1,8 @@
 package p2Electrodomesticos;
+
 /**
  * Clase Televisor, subclase de Electrodomesticos
+ * 
  * @author takeshi
  *
  */
@@ -30,10 +32,11 @@ public class Televisor extends Electrodomesticos {
 		this.resolucion = resolucion;
 		this.sintonizadorTDT = sintonizador;
 	}
+
 //METODOS_______________________________________
-/**
- * Calcula el precio final del objeto televisor segun sus atributos
- */
+	/**
+	 * Calcula el precio final del objeto televisor segun sus atributos
+	 */
 	public double precioFinal(char consumo, double peso) {
 
 		double adicionalConsumo = Utiles.precioConsumo(consumo);
@@ -45,14 +48,13 @@ public class Televisor extends Electrodomesticos {
 		return precioFinal;
 	}
 
-@Override
-public String toString() {
-	return "Televisor  Color:" + getColor() + ", Cat. consumo:"
-			+ getConsumoEnergetico() + ", Peso(kg):" + getPeso() + ",Tamano(in):" + resolucion + ", SintonizadorHD:"
-			+ sintonizadorTDT;
-}
+	@Override
+	public String toString() {
+		return "Televisor - Peso(kg):" + getPeso() + ", Color:" + getColor() + ", Cat.Consumo:" + getConsumoEnergetico()
+				+ ", Tamano(in):" + resolucion + ", SintonizadorHD:" + sintonizadorTDT;
+	}
 
-	//GET & SET_____________________________________
+	// GET & SET_____________________________________
 	/**
 	 * @return the resolucion
 	 */
