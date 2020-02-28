@@ -1,6 +1,6 @@
 package p2Electrodomesticos;
 
-public class P2Ejecutable {
+public class P2Ejecutable{
 
 	public static void main(String[] args) {
 		
@@ -26,9 +26,8 @@ public class P2Ejecutable {
 		Televisor t2= new Televisor(60, true);
 		t2.setPrecioBase(t2.precioFinal(t2.getConsumoEnergetico(), t2.getPeso()));
 		lista.items[4]=t2;
-
 		
-
+		creaElectrodomesticos();
 //MUESTRA TOTALES________________________________________
 		lista.calculaElectrodomesticosOtros();
 		lista.calculaTelevisores();
@@ -37,6 +36,13 @@ public class P2Ejecutable {
 		
 
 		
+		
 	}// main
+	
+	
+	public static void creaElectrodomesticos() {
+		
+
+	}
 
 }

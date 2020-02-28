@@ -41,21 +41,16 @@ public class Utiles {
 	 */
 	public static double precioPeso(double peso) {
 		double nuevoPrecio = 0;
-		boolean inputCorrecto = false;
 
 		if (peso <= 19) {
 			nuevoPrecio = 10;
-			inputCorrecto = true;
 		} else if (peso <= 49) {
 			nuevoPrecio = 50;
-			inputCorrecto = true;
 		} else if (peso <= 79) {
 			nuevoPrecio = 80;
-			inputCorrecto = true;
 		} else if (peso > 79) {
 			nuevoPrecio = 100;
-			inputCorrecto = true;
-		}
+		} else nuevoPrecio = 10;
 		return nuevoPrecio;
 	}
 
@@ -90,7 +85,8 @@ public class Utiles {
 	public static double incrementoPulgadas(float pulgadas) {
 		if (pulgadas > 40) {
 			return 1.3;
+		}else {
+			return 1.0;
 		}
-		return 1.0;
 	}
 }
