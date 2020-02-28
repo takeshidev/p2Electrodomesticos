@@ -11,29 +11,31 @@ public class Televisor extends Electrodomesticos {
 // CONSTRUCTORES________________________________
 	public Televisor() {
 		super();
-		this.resolucion=RESOLUCION_DEFAULT;
-		this.sintonizadorTDT=SINTONIZADOR_DEFAULT;
+		this.resolucion = RESOLUCION_DEFAULT;
+		this.sintonizadorTDT = SINTONIZADOR_DEFAULT;
 	}
 
 	public Televisor(double precio, double peso) {
 		super(precio, peso);
-		this.resolucion=RESOLUCION_DEFAULT;
-		this.sintonizadorTDT=SINTONIZADOR_DEFAULT;
+		this.resolucion = RESOLUCION_DEFAULT;
+		this.sintonizadorTDT = SINTONIZADOR_DEFAULT;
 	}
+
 	public Televisor(float resolucion, boolean sintonizador) {
 		super();
-		this.resolucion=resolucion;
-		this.sintonizadorTDT=sintonizador;
+		this.resolucion = resolucion;
+		this.sintonizadorTDT = sintonizador;
 	}
 //METODOS_______________________________________
 
 	public double precioFinal(char consumo, double peso) {
-		
+
 		double adicionalConsumo = Utiles.precioConsumo(consumo);
 		double adicionalPeso = Utiles.precioPeso(peso);
 		double adicionalSintonizador = Utiles.precioSintonizador(isSintonizadorTDT());
 		double incrementoPulgadas = Utiles.incrementoPulgadas(getResolucion());
-		double precioFinal = (getPrecioBase()+adicionalConsumo+adicionalPeso+adicionalSintonizador)*incrementoPulgadas;
+		double precioFinal = (getPrecioBase() + adicionalConsumo + adicionalPeso + adicionalSintonizador)
+				* incrementoPulgadas;
 		return precioFinal;
 	}
 

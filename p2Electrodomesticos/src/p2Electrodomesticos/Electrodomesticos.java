@@ -45,11 +45,21 @@ public class Electrodomesticos {
 
 //METODOS_______________________________________
 	private void comprobarConsumoEnergetico(char letra) {
-		// comprueba letra correcta
+		if (letra=='A'||letra=='B'||letra=='C'||letra=='D'||letra=='E'||letra=='F') {
+			System.out.print("Codigo consumo ok. \t ");
+		}else {
+			System.out.print("Codigo consumo erroneo, se usara valor por defecto. \t");
+			setConsumoEnergetico(CONSUMO_DEFAULT);
+		}
 	}
 
 	private void comprobarColor(String color) {
-		// color correcto o defecto
+		if (color.equalsIgnoreCase("blanco")||color.equalsIgnoreCase("negro")||color.equalsIgnoreCase("rojo")||color.equalsIgnoreCase("azul")||color.equalsIgnoreCase("gris")) {
+			System.out.print("Color ok. \n");
+		}else {
+			setColor(COLOR_DEFECTO);
+			System.out.print("Color no existente. Se usara color default.\n");
+		}
 	}
 
 	public double precioFinal(char consumo, double peso) {
