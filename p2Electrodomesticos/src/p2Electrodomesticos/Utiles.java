@@ -6,7 +6,7 @@ package p2Electrodomesticos;
 public class Utiles {
 	/**
 	 * Recibe una letra categoria de consumo y retorna el valor a adicionar al
-	 * precio
+	 * precio 
 	 * 
 	 * @param letra
 	 * @return nuevoPrecio
