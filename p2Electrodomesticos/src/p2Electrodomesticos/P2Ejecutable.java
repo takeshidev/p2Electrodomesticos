@@ -5,7 +5,7 @@ public class P2Ejecutable {
 	public static void main(String[] args) {
 		
 		Lista lista = new Lista();
-//CREACION ITEMS
+//CREACION ITEMS__________________________
 		System.out.println("Fabricando electrodomesticos...");
 		Electrodomesticos e1 = new ElectrodomesticoOtro();
 		e1.setPrecioBase(e1.precioFinal(e1.getConsumoEnergetico(), e1.getPeso()));

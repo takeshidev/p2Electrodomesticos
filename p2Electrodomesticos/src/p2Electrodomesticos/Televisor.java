@@ -1,5 +1,9 @@
 package p2Electrodomesticos;
-
+/**
+ * Clase Televisor, subclase de Electrodomesticos
+ * @author takeshi
+ *
+ */
 public class Televisor extends Electrodomesticos {
 //ATRIBUTOS_____________________________________
 	private float resolucion; // pulgadas
@@ -27,7 +31,9 @@ public class Televisor extends Electrodomesticos {
 		this.sintonizadorTDT = sintonizador;
 	}
 //METODOS_______________________________________
-
+/**
+ * Calcula el precio final del objeto televisor
+ */
 	public double precioFinal(char consumo, double peso) {
 
 		double adicionalConsumo = Utiles.precioConsumo(consumo);

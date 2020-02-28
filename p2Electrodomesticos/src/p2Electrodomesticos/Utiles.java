@@ -14,24 +14,19 @@ public class Utiles {
 		if (letra == 'A') {
 			nuevoPrecio = 100;
 			inputCorrecto = true;
-		}
-		if (letra == 'B') {
+		} else if (letra == 'B') {
 			nuevoPrecio = 80;
 			inputCorrecto = true;
-		}
-		if (letra == 'C') {
+		} else if (letra == 'C') {
 			nuevoPrecio = 60;
 			inputCorrecto = true;
-		}
-		if (letra == 'D') {
+		} else if (letra == 'D') {
 			nuevoPrecio = 50;
 			inputCorrecto = true;
-		}
-		if (letra == 'E') {
+		} else if (letra == 'E') {
 			nuevoPrecio = 30;
 			inputCorrecto = true;
-		}
-		if (letra == 'F') {
+		} else {
 			nuevoPrecio = 10;
 			inputCorrecto = true;
 		}
@@ -64,20 +59,22 @@ public class Utiles {
 		return nuevoPrecio;
 	}
 
-/**
- * Recibe la carga de una Lavadora y retorna el valor a adicionar al precio
- */
-	public static double precioCarga(float carga){
+	/**
+	 * Recibe la carga de una Lavadora y retorna el valor a adicionar al precio
+	 */
+	public static double precioCarga(float carga) {
 		double nuevoPrecio = 0;
-		if (carga>30) {
+		if (carga > 30) {
 			nuevoPrecio += 50;
 		}
-		
+
 		return nuevoPrecio;
 	}
-/**
- * Recibe si Televisor tiene Sintonizador y retorna el valor a adicionar al precio
- */
+
+	/**
+	 * Recibe si Televisor tiene Sintonizador y retorna el valor a adicionar al
+	 * precio
+	 */
 	public static double precioSintonizador(boolean sintonizador) {
 		double nuevoPrecio = 0;
 		if (sintonizador) {
@@ -85,12 +82,13 @@ public class Utiles {
 		}
 		return nuevoPrecio;
 	}
-	
-/**
- * Recibe el tamano del Televisor y retorna el porcentaje de incremento del precio	
- */
+
+	/**
+	 * Recibe el tamano del Televisor y retorna el porcentaje de incremento del
+	 * precio
+	 */
 	public static double incrementoPulgadas(float pulgadas) {
-		if (pulgadas>40) {
+		if (pulgadas > 40) {
 			return 1.3;
 		}
 		return 1.0;
