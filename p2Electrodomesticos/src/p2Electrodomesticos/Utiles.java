@@ -53,7 +53,8 @@ public class Utiles {
 			nuevoPrecio = 80;
 		} else if (peso > 79) {
 			nuevoPrecio = 100;
-		} else nuevoPrecio = 10;
+		} else
+			nuevoPrecio = 10;
 		return nuevoPrecio;
 	}
 
@@ -88,7 +89,7 @@ public class Utiles {
 	public static double incrementoPulgadas(float pulgadas) {
 		if (pulgadas > 40) {
 			return 1.3;
-		}else {
+		} else {
 			return 1.0;
 		}
 	}
