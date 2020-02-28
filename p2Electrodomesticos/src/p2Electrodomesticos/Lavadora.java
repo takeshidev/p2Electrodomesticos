@@ -1,5 +1,9 @@
 package p2Electrodomesticos;
-
+/**
+ * Clase Lavadora. Subclase de Electrodomestico
+ * @author Alumno
+ *
+ */
 public class Lavadora extends Electrodomesticos{
 //ATRIBUTOS_____________________________________
 	private float carga;

@@ -1,9 +1,7 @@
+package p2Electrodomesticos;
 /**
  * Crea objeto Lista que contiene array items
  */
-
-package p2Electrodomesticos;
-
 public class Lista {
 	Electrodomesticos[] items = new Electrodomesticos[10];
 

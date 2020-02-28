@@ -1,5 +1,9 @@
 package p2Electrodomesticos;
-
+/**
+ * Clase ElectrodomesticoOtro que representa objetos que no son Televisor o Lavadora
+ * @author Alumno
+ *
+ */
 public class ElectrodomesticoOtro extends Electrodomesticos{
 
 	public ElectrodomesticoOtro() {

@@ -1,8 +1,7 @@
+package p2Electrodomesticos;
 /**
  * Superclase Electrodomesticos
  */
-package p2Electrodomesticos;
-
 public class Electrodomesticos {
 //ATRIBUTOS_____________________________________
 	private double precioBase;

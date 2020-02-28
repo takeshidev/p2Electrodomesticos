@@ -3,7 +3,11 @@ package p2Electrodomesticos;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
-
+/**
+ * JUnit para la clase Utiles
+ * @author Alumno
+ *
+ */
 class UtilesTest {
 
 	@Test
