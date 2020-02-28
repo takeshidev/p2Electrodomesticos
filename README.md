@@ -10,3 +10,4 @@ El programa crea una lista con objetos *Televisor*, *Lavadora* y *Electrodomesti
 
 ## Diagrama UML del proyecto
 ![UML](https://github.com/takeshidev/p2Electrodomesticos/blob/master/p2Electrodomesticos/src/p2Electrodomesticos/p2ElectrodomesticosUML.png) 
+
