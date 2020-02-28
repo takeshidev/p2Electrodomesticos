@@ -37,7 +37,7 @@ public class Lista {
 				System.out.println(i + " " + items[i].getPrecioBase());
 			}
 		}
-		System.out.println("Total otros electrodomesticos: $" + totalElectrodomesticos);
+		System.out.println("Total otros electrodomesticos: $" + totalElectrodomesticos+"\n");
 	}
 	/**
 	 * Calcula y muestra el precio total de las Lavadoras
@@ -48,10 +48,10 @@ public class Lista {
 		for (int i = 0; i < items.length; i++) {
 			if (items[i] instanceof Lavadora) {
 				totalLavadoras += items[i].getPrecioBase();
-				System.out.println(i + " " + items[i].getPrecioBase());
+				System.out.println(i + " " + items[i].getPrecioBase() +"  "+items[i].toString() );
 			}
 		}
-		System.out.println("Total lavadoras: $" + totalLavadoras);
+		System.out.println("Total lavadoras: $" + totalLavadoras+"\n");
 	}
 
 	/**
@@ -63,10 +63,10 @@ public class Lista {
 		for (int i = 0; i < items.length; i++) {
 			if (items[i] instanceof Televisor) {
 				totalTelevisores += items[i].getPrecioBase();
-				System.out.println(i + " " + items[i].getPrecioBase());
+				System.out.println(i + " " + items[i].getPrecioBase() +"  "+items[i].toString() );
 			}
 		}
-		System.out.println("Total televisores: $" + totalTelevisores);
+		System.out.println("Total televisores: $" + totalTelevisores +"\n");
 	}
 
 }

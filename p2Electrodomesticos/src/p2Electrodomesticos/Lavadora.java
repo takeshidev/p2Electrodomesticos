@@ -34,7 +34,13 @@ public class Lavadora extends Electrodomesticos{
 		double precioFinal = getPrecioBase()+adicionalConsumo+adicionalPeso+adicionalCarga;
 		return precioFinal;
 	}
-//GET & SET_____________________________________
+	
+@Override
+	public String toString() {
+		return "Lavadora - Carga(kg):" + carga + ", Color:" + getColor() + ", Cat.Consumo:"
+				+ getConsumoEnergetico() + ", Peso:" + getPeso();
+	}
+	//GET & SET_____________________________________
 		//solo get carga
 	public float getCarga() {
 		return carga;

@@ -45,7 +45,14 @@ public class Televisor extends Electrodomesticos {
 		return precioFinal;
 	}
 
-//GET & SET_____________________________________
+@Override
+public String toString() {
+	return "Televisor  Color:" + getColor() + ", Cat. consumo:"
+			+ getConsumoEnergetico() + ", Peso(kg):" + getPeso() + ",Tamano(in):" + resolucion + ", SintonizadorHD:"
+			+ sintonizadorTDT;
+}
+
+	//GET & SET_____________________________________
 	/**
 	 * @return the resolucion
 	 */
