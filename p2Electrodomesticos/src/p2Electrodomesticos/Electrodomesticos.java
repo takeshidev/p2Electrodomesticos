@@ -1,4 +1,5 @@
 package p2Electrodomesticos;
+
 /**
  * Superclase Electrodomesticos
  */
@@ -18,9 +19,9 @@ public class Electrodomesticos {
 	public Electrodomesticos() { // Constructor default
 		this.precioBase = PRECIO_DEFAULT;
 		this.color = COLOR_DEFECTO.toLowerCase();
-		this.consumoEnergetico=CONSUMO_DEFAULT;
+		this.consumoEnergetico = CONSUMO_DEFAULT;
 		this.peso = PESO_DEFAULT;
-		
+
 		comprobarConsumoEnergetico(consumoEnergetico);
 		comprobarColor(color);
 	}
@@ -28,9 +29,9 @@ public class Electrodomesticos {
 	public Electrodomesticos(double precio, double peso) { // Constructor precio, peso
 		this.precioBase = precio;
 		this.color = COLOR_DEFECTO.toLowerCase();
-		this.consumoEnergetico=CONSUMO_DEFAULT;
+		this.consumoEnergetico = CONSUMO_DEFAULT;
 		this.peso = peso;
-		
+
 		comprobarConsumoEnergetico(consumoEnergetico);
 		comprobarColor(color);
 	}
@@ -40,46 +41,50 @@ public class Electrodomesticos {
 		this.color = color.toLowerCase();
 		this.peso = peso;
 		this.consumoEnergetico = consumo;
-		
+
 		comprobarConsumoEnergetico(consumoEnergetico);
 		comprobarColor(color);
 	}
 
 //METODOS_______________________________________
 	/**
-	 * Comprueba que la variable que indica el consumo energetico este correctamente ingresada. De otro modo se asigna valor por defecto
-	 */	
+	 * Comprueba que la variable que indica el consumo energetico este correctamente
+	 * ingresada. De otro modo se asigna valor por defecto
+	 */
 	private void comprobarConsumoEnergetico(char letra) {
-		if (letra=='A'||letra=='B'||letra=='C'||letra=='D'||letra=='E'||letra=='F') {
-			//System.out.print("Codigo consumo ok. \t ");
-		}else {
-			//System.out.print("Codigo consumo erroneo, se usara valor por defecto. \t");
+		if (letra == 'A' || letra == 'B' || letra == 'C' || letra == 'D' || letra == 'E' || letra == 'F') {
+			// System.out.print("Codigo consumo ok. \t ");
+		} else {
+			// System.out.print("Codigo consumo erroneo, se usara valor por defecto. \t");
 			setConsumoEnergetico(CONSUMO_DEFAULT);
 		}
 	}
+
 	/**
-	 * Comprueba que la variable que indica el color del item este correctamente ingresada. De otro modo se asigna valor por defecto
-	 */	
+	 * Comprueba que la variable que indica el color del item este correctamente
+	 * ingresada. De otro modo se asigna valor por defecto
+	 */
 	private void comprobarColor(String color) {
-		if (color.equalsIgnoreCase("blanco")||color.equalsIgnoreCase("negro")||color.equalsIgnoreCase("rojo")||color.equalsIgnoreCase("azul")||color.equalsIgnoreCase("gris")) {
-			//System.out.print("Color ok. \n");
-		}else {
+		if (color.equalsIgnoreCase("blanco") || color.equalsIgnoreCase("negro") || color.equalsIgnoreCase("rojo")
+				|| color.equalsIgnoreCase("azul") || color.equalsIgnoreCase("gris")) {
+			// System.out.print("Color ok. \n");
+		} else {
 			setColor(COLOR_DEFECTO);
-			//System.out.print("Color no existente. Se usara color default.\n");
+			// System.out.print("Color no existente. Se usara color default.\n");
 		}
 	}
+
 	/**
 	 * Calcula el precio final del item segun sus atributos
-	 */	
+	 */
 	public double precioFinal(char consumo, double peso) {
-		
+
 		double adicionalConsumo = Utiles.precioConsumo(consumo);
 		double adicionalPeso = Utiles.precioPeso(peso);
-		double precioFinal = precioBase+adicionalConsumo+adicionalPeso;
+		double precioFinal = precioBase + adicionalConsumo + adicionalPeso;
 		return precioFinal;
 	}
 
-	
 //GETs & SETs___________________________________
 	/**
 	 * @return the precioBase

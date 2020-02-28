@@ -1,4 +1,5 @@
 package p2Electrodomesticos;
+
 /**
  * Crea objeto Lista que contiene array items
  */
@@ -20,13 +21,15 @@ public class Lista {
 		for (int i = 0; i < items.length; i++) {
 			if (items[i] instanceof Electrodomesticos) {
 				totalTodo += items[i].getPrecioBase();
-				System.out.println("["+i+"]" + " $" + items[i].getPrecioBase() +"  "+items[i].toString());
+				System.out.println("[" + i + "]" + " $" + items[i].getPrecioBase() + "  " + items[i].toString());
 			}
 		}
 		System.out.println("Total final: $" + totalTodo);
 	}
+
 	/**
-	 * Calcula y muestra el precio total de los electrodomesticos que no son Televisor o Lavadora
+	 * Calcula y muestra el precio total de los electrodomesticos que no son
+	 * Televisor o Lavadora
 	 */
 	public void calculaElectrodomesticosOtros() {
 		double totalElectrodomesticos = 0;
@@ -34,11 +37,12 @@ public class Lista {
 		for (int i = 0; i < items.length; i++) {
 			if (items[i] instanceof ElectrodomesticoOtro) {
 				totalElectrodomesticos += items[i].getPrecioBase();
-				System.out.println("["+i+"]" + " $" + items[i].getPrecioBase() +"  "+items[i].toString());
+				System.out.println("[" + i + "]" + " $" + items[i].getPrecioBase() + "  " + items[i].toString());
 			}
 		}
-		System.out.println("Total otros electrodomesticos: $" + totalElectrodomesticos+"\n");
+		System.out.println("Total otros electrodomesticos: $" + totalElectrodomesticos + "\n");
 	}
+
 	/**
 	 * Calcula y muestra el precio total de las Lavadoras
 	 */
@@ -48,10 +52,10 @@ public class Lista {
 		for (int i = 0; i < items.length; i++) {
 			if (items[i] instanceof Lavadora) {
 				totalLavadoras += items[i].getPrecioBase();
-				System.out.println("["+i+"]" + " $" + items[i].getPrecioBase() +"  "+items[i].toString() );
+				System.out.println("[" + i + "]" + " $" + items[i].getPrecioBase() + "  " + items[i].toString());
 			}
 		}
-		System.out.println("Total lavadoras: $" + totalLavadoras+"\n");
+		System.out.println("Total lavadoras: $" + totalLavadoras + "\n");
 	}
 
 	/**
@@ -63,10 +67,10 @@ public class Lista {
 		for (int i = 0; i < items.length; i++) {
 			if (items[i] instanceof Televisor) {
 				totalTelevisores += items[i].getPrecioBase();
-				System.out.println("["+i+"]" + " $" + items[i].getPrecioBase() +"  "+items[i].toString() );
+				System.out.println("[" + i + "]" + " $" + items[i].getPrecioBase() + "  " + items[i].toString());
 			}
 		}
-		System.out.println("Total televisores: $" + totalTelevisores +"\n");
+		System.out.println("Total televisores: $" + totalTelevisores + "\n");
 	}
 
 }

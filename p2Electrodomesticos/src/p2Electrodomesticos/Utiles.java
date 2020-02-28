@@ -1,11 +1,13 @@
 package p2Electrodomesticos;
+
 /**
- * Clase Utiles que contiene metodos que modifican el valor del precio acorde a sus atributos
+ * Clase Utiles que contiene metodos que modifican el valor del precio acorde a
+ * sus atributos
  */
 public class Utiles {
 	/**
 	 * Recibe una letra categoria de consumo y retorna el valor a adicionar al
-	 * precio 
+	 * precio
 	 * 
 	 * @param letra
 	 * @return nuevoPrecio
