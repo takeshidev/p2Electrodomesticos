@@ -4,7 +4,7 @@
 
 Programa desarrollado para la evaluacion 2 de FullStack Java.
 
-El programa crea una lista con objetos *Televisor*, *Lavadora* y *ElectrodomesticoOtro* como subclases de *Electrodomestico* y calcula el precio de cada items de acuerdo al requerimiento del producto.
+El programa crea una lista con objetos *Televisor*, *Lavadora* y *ElectrodomesticoOtro* como subclases de *Electrodomestico* y calcula el precio de cada items de acuerdo al requerimiento del producto usando los metodos de *Utiles*.
 
 [Ver requerimientos](https://github.com/takeshidev/p2Electrodomesticos/blob/master/b1.2%20Evaluacion_%20POO%20(i).pdf)
 
