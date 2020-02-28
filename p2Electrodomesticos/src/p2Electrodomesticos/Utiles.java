@@ -1,3 +1,6 @@
+/**
+ * Clase Utiles que contiene metodos que modifican el valor del precio acorde a sus atributos
+ */
 package p2Electrodomesticos;
 
 public class Utiles {

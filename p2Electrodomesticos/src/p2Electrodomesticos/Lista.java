@@ -1,3 +1,7 @@
+/**
+ * Crea objeto Lista que contiene array items
+ */
+
 package p2Electrodomesticos;
 
 public class Lista {
@@ -23,6 +27,9 @@ public class Lista {
 		}
 		System.out.println("Total final: $" + totalTodo);
 	}
+	/**
+	 * Calcula y muestra el precio total de los electrodomesticos que no son Televisor o Lavadora
+	 */
 	public void calculaElectrodomesticosOtros() {
 		double totalElectrodomesticos = 0;
 		System.out.println("Otros electrodomesticos:");

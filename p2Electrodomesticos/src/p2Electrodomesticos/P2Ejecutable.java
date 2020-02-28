@@ -1,5 +1,9 @@
+/**
+ * Proyecto Electrodomesticos. Prueba 2 FullStack Java
+ * @author Takeshi Kita
+ *
+ */
 package p2Electrodomesticos;
-
 public class P2Ejecutable{
 
 	public static void main(String[] args) {

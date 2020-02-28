@@ -19,6 +19,9 @@ public class Lavadora extends Electrodomesticos{
 		this.carga=carga;
 	}
 //METODOS_______________________________________
+	/**
+	 * Calcula el precio final del objeto Lavadora segun sus atributos
+	 */
 	public double precioFinal(char consumo, double peso) {
 	
 		double adicionalConsumo = Utiles.precioConsumo(consumo);

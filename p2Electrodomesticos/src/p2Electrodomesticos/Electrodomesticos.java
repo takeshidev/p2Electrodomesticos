@@ -1,3 +1,6 @@
+/**
+ * Superclase Electrodomesticos
+ */
 package p2Electrodomesticos;
 
 public class Electrodomesticos {
@@ -44,6 +47,9 @@ public class Electrodomesticos {
 	}
 
 //METODOS_______________________________________
+	/**
+	 * Comprueba que la variable que indica el consumo energetico este correctamente ingresada. De otro modo se asigna valor por defecto
+	 */	
 	private void comprobarConsumoEnergetico(char letra) {
 		if (letra=='A'||letra=='B'||letra=='C'||letra=='D'||letra=='E'||letra=='F') {
 			System.out.print("Codigo consumo ok. \t ");
@@ -52,7 +58,9 @@ public class Electrodomesticos {
 			setConsumoEnergetico(CONSUMO_DEFAULT);
 		}
 	}
-
+	/**
+	 * Comprueba que la variable que indica el color del item este correctamente ingresada. De otro modo se asigna valor por defecto
+	 */	
 	private void comprobarColor(String color) {
 		if (color.equalsIgnoreCase("blanco")||color.equalsIgnoreCase("negro")||color.equalsIgnoreCase("rojo")||color.equalsIgnoreCase("azul")||color.equalsIgnoreCase("gris")) {
 			System.out.print("Color ok. \n");
@@ -61,7 +69,9 @@ public class Electrodomesticos {
 			System.out.print("Color no existente. Se usara color default.\n");
 		}
 	}
-
+	/**
+	 * Calcula el precio final del item segun sus atributos
+	 */	
 	public double precioFinal(char consumo, double peso) {
 		
 		double adicionalConsumo = Utiles.precioConsumo(consumo);

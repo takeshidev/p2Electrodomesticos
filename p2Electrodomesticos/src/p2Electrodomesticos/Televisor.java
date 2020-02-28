@@ -32,7 +32,7 @@ public class Televisor extends Electrodomesticos {
 	}
 //METODOS_______________________________________
 /**
- * Calcula el precio final del objeto televisor
+ * Calcula el precio final del objeto televisor segun sus atributos
  */
 	public double precioFinal(char consumo, double peso) {
 
